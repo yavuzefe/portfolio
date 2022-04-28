@@ -1,0 +1,136 @@
+@media screen and (max-width:768px) {
+    /* navbar */
+
+    .headings {
+        font-size: 2.5rem;
+    }
+
+    #resumebutton{
+        width: 100%;
+    }
+
+    /* PROJECT */
+    .galleryitems{
+        width: 100%;
+    }
+    .galleryitems img {
+        width: 80%;
+        height: auto;
+    }
+
+    /* About */
+    #pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pic img {
+        width: 500px;
+        height: 300px;
+    }
+
+    #intro h2 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Contact */
+    .inputs {
+        width: 60%;
+    }
+
+    #message {
+        width: 60%;
+    }
+
+    #send {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    /* HAMBURGER MENU */
+    /* #check{
+        display: none;
+    } */
+    label {
+        display: flex;
+        flex-direction: column;
+        width: 70px;
+        cursor: pointer;
+    }
+    label span {
+        background: #fff;
+        border-radius: 10px;
+        height: 7px;
+        margin: 7px 0;
+        transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+    span:nth-of-type(1) {
+        width: 50%;
+    }
+    span:nth-of-type(2) {
+        width: 100%;
+    }
+    span:nth-of-type(3) {
+        width: 75%;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type="checkbox"]:checked~span:nth-of-type(1) {
+        transform-origin: bottom;
+        transform: rotatez(45deg) translate(8px, 0px)
+    }
+    input[type="checkbox"]:checked~span:nth-of-type(2) {
+        transform-origin: top;
+        transform: rotatez(-45deg)
+    }
+
+    input[type="checkbox"]:checked~span:nth-of-type(3) {
+
+        transform-origin: bottom;
+        width: 50%;
+        transform: translate(30px, -11px) rotatez(45deg);
+    }
+
+    /* HOME */
+    #home {
+        height: 820px;
+    }
+
+    #headings {
+        font-size: 1.5rem;
+    }
+
+    /* About */
+    #pic img {
+        width: 300px;
+        height: 175px;
+    }
+
+    #intro h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Projects */
+    .gallery img {
+        width: 100vw;
+        height: auto;
+        /* margin: 10px; */
+    }
+
+    /* Contact */
+    .inputs {
+        width: 80%;
+    }
+
+    #message {
+        width: 80%
+    }
+
+    #send {
+        width: 30%;
+    }
+}
