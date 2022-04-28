@@ -12,7 +12,12 @@
 
 <body>
   <nav>
-    <ul>
+    <div id="logo"><img src="/images/logo.gif" alt="logo"></div>
+    <input id="menu_toggle" type="checkbox">
+    <label class="menu_btn" for="menu_toggle">
+      <span></span>
+    </label>
+    <ul class="menu_box" id="main-nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="certificate.html">Certificates</a></li>
@@ -24,7 +29,7 @@
   <section id="contactme">
     <h1 class="headings">CONTACT</h1>
     <form action="#" method="post" class="form">
-      <input type="text" name="fname" class="inputs" placeholder="Name">
+      <input type="text" name="fname" class="inputs" placeholder="Name" autofocus>
       <input type="email" name="email" class="inputs" placeholder="E-Mail">
       <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
       <input type="button" value="SEND" id="send">
