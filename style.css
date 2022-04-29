@@ -12,7 +12,7 @@ html {
 
 section {
     width: 80vw;
-    margin: auto;
+    margin: auto;  
 }
 
 h1 {
@@ -30,14 +30,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 2rem;
-}
-
-nav #logo img{
-    height: 2rem;
-    position: absolute;
-    left: 16%;
-    top: 0%;
+    height: 3rem;
 }
 
 nav ul {
@@ -48,11 +41,12 @@ nav ul {
 nav ul li {
     font-size: 1.2rem;
     font-weight: bold;
+    margin: 1rem;
 }
 
 nav ul li a {
     color: #F2F2F2;
-    padding: 0px 30px;
+    margin: 2rem;
     text-decoration: none;
     transition: all 0.5s ease;
 }
@@ -67,13 +61,13 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.headings {
-    color: #5B6AF0;
+.headings, #greetingh1 {
+    color: #4b023a;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin: 3rem auto 1rem;
+    margin: 5rem auto 1rem;
 }
 
 /* HAMBURGER MENU */
@@ -87,7 +81,6 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 #container {
@@ -95,25 +88,36 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    height: 100vh;
 }
 
 #home img {
     display: block;
-    height: 35vw;
+    height: 40vw;
     margin-top: 1rem;
     border-radius: 0% 0% 10% 10%;
 }
 
-#home p {
+#home #greeting {
     font-size: 1.2rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    margin: 2rem;
+    text-align: center;
+}
+#home #greetingh1 {
+    margin-top: 10px !important
+}
+
+#resumelink{
+    display: flex;
+    text-decoration: none;
 }
 
 #resumebutton {
     width: 35%;
     margin: 2rem auto 0;
     padding: 0.3em;
-    background-color: #ad0586d7;
+    background-color: #4b023a;
     color: whitesmoke;
     font-size: large;
     border-radius: 1em;
@@ -133,6 +137,11 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 6rem;
+}
+
+#projects h1{
+    margin: 3rem auto;
 }
 
 .projectgallery {
@@ -174,8 +183,8 @@ nav ul li a:hover {
 .cardtext h2 {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem auto;
-    color: #AD0586;
+    margin: 1.2rem auto;
+    color: #4b023a;
 }
 
 .apptools {
@@ -205,13 +214,12 @@ nav ul li a:hover {
     text-decoration: none;
     font-size: medium;
     font-weight: 600;
-    color: #2b2b2b;
+    color: #6c6c6c;
     margin: 0.5rem;
-
 }
 
 .links a:hover{
-    color: #c40808;
+    color: #4b023a;
 }
 
 .slider {
@@ -236,12 +244,18 @@ nav ul li a:hover {
     width: 100%;
     max-height: 500px;
 }
+.slider li img #certificate2{
+    height: 20rem;
+    width: auto;
+
+}
 
 /* ABOUT SECTION */
 
 #about {
     display: flex;
     flex-direction: column;
+    padding: 2%;
 }
 
 #pic {
@@ -249,7 +263,6 @@ nav ul li a:hover {
     align-items: center;
     width: 100%;
     height: auto;
-
 }
 
 #pic img {
@@ -268,6 +281,10 @@ nav ul li a:hover {
     font-size: medium;
 }
 
+#about h1{
+    margin-bottom: 3rem;
+}
+
 #introduction h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -275,10 +292,10 @@ nav ul li a:hover {
 
 /* Contact Section */
 
-#contact {
+#contactme {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 5% auto;
 }
 
 .form {
@@ -321,10 +338,12 @@ nav ul li a:hover {
 
 /* FOOTER ICONS */
 footer {
-    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
     flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
+    align-items: space-between;
+    /* margin-top: 1rem; */
 }
 
 .footer-icons {
@@ -332,7 +351,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 1rem;
 }
 
@@ -346,5 +365,7 @@ footer {
 }
 
 footer p {
+    display: flex;
     font-size: 0.8rem;
+    justify-content: center;
 }

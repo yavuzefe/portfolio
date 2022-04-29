@@ -1,10 +1,4 @@
 @media screen and (max-width:768px) {
-    nav #logo img{
-        height: 2rem;
-        position: absolute;
-        left: 5%;
-        top: 0%;
-    }
 
     /* navbar */
     /* hamburger menu */
@@ -92,7 +86,9 @@
         z-index: 1;
     }
 
-    .menu_btn>span, .menu_btn>span::before, .menu_btn>span::after {
+    .menu_btn>span,
+    .menu_btn>span::before,
+    .menu_btn>span::after {
         display: block;
         position: absolute;
 
@@ -119,7 +115,8 @@
         top: -100%;
         left: 0;
         width: 100%;
-        margin: 0;
+        height: 15rem;
+        /* margin: 0; */
         padding: 2rem 1rem;
         background-color: #4b023a;
         box-shadow: 1px 10px 10px rgba(0, 0, 0, .7);
@@ -139,11 +136,13 @@
         width: 100%;
         margin-bottom: 2rem;
     }
-    .galleryitems a  {
+
+    .galleryitems a {
         display: flex;
         justify-content: center;
         margin-bottom: 1rem;
     }
+
     .galleryitems a img {
         width: 80%;
         height: auto;
@@ -217,11 +216,13 @@
 }
 
 @media screen and (max-width:400px) {
+
     /* HOME SECTION */
-    #home img{
+    #home img {
         display: none;
     }
-    #container{
+
+    #container {
         width: 100%;
     }
 
@@ -229,12 +230,18 @@
     #send {
         background-color: #F042FC;
         padding: 0.5rem;
-}
+    }
+
     /* CERTIFICATES SECTION */
-    .links{
+    .links {
         width: 100%;
     }
-.slider{
-    display: none;
-}
+
+    .slider {
+        display: none;
+    }
+    .footer-icons {
+        flex-wrap:nowrap;
+       
+    }
 }
